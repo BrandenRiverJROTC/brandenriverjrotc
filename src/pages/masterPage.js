@@ -5,16 +5,16 @@ $w.onReady(function () {
 
 	$w(largeNavbarID).onViewportEnter((event) => {
         console.log("Element entered the viewport");
-		// Hide smaller navbar && show larger navbar
+		/* Hide smaller navbar && show larger navbar
 		$w(navbarID).hide();
-		$w(largeNavbarID).show();
+		$w(largeNavbarID).show(); */
     });
 
     $w(largeNavbarID).onViewportLeave((event) => {
         console.log("Element left the viewport");
-		// Hide larger navbar & show smaller navbar
+		/* Hide larger navbar & show smaller navbar
 		$w(largeNavbarID).hide();
-		$w(navbarID).show();
+		$w(navbarID).show(); */
     });
 	
 });
