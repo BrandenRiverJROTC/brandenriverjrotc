@@ -3,11 +3,11 @@ $w.onReady(function () {
 	let header = "#header";
 	let navbarID = "#navbar";
 
-	$w(largeNavbarID).onViewportEnter(() => {
+	$w(header).onViewportEnter(() => {
         console.log("Header entered the viewport");
     });
 
-    $w(largeNavbarID).onViewportLeave(() => {
+    $w(header).onViewportLeave(() => {
         console.log("Header left the viewport");
     });
 	
