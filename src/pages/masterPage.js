@@ -5,10 +5,13 @@ $w.onReady(function () {
 
 	$w(header).onViewportEnter(() => {
         console.log("Header entered the viewport");
+		$w(navbarID).hide(navbarID);
     });
 
     $w(header).onViewportLeave(() => {
         console.log("Header left the viewport");
+		$w(navbarID).show(navbarID);
+
     });
 	
 });
