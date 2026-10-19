@@ -2,17 +2,20 @@
 $w.onReady(function () {
 	let largeNavbarID = "#largeNavbar";
 	let navbarID = "#navbar";
+	const el = $w(largeNavbarID);
 
 	$w(largeNavbarID).onViewportEnter(() => {
         console.log("Element entered the viewport");
-		$w("#largeNavbar").show();
-		$w("#navbar").hide();
+		console.log("Element:", el);
+   	 	console.log("Viewport leave:", typeof el.onViewportLeave);
+    	console.log("Viewport enter:", typeof el.onViewportEnter);
     });
 
     $w(largeNavbarID).onViewportLeave(() => {
         console.log("Element left the viewport");
-		$w("#largeNavbar").hide();
-		$w("#navbar").show();
+		console.log("Element:", el);
+    	console.log("Viewport leave:", typeof el.onViewportLeave);
+    	console.log("Viewport enter:", typeof el.onViewportEnter);
     });
 	
 });
