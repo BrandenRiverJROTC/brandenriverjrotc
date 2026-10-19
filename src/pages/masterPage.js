@@ -1,11 +1,20 @@
 // The code in this file will load on every page of your site
 $w.onReady(function () {
-	$w("#header1").onViewportEnter(() => {
+	let largeNavbarID = "largeNavbar";
+	let navbarID = "navbar";
+
+	$w(largeNavbarID).onViewportEnter((event) => {
         console.log("Element entered the viewport");
+		// Hide smaller navbar && show larger navbar
+		$w(navbarID).hide();
+		$w(largeNavbarID).show();
     });
 
-    $w("#header1").onViewportLeave(() => {
+    $w(largeNavbarID).onViewportLeave((event) => {
         console.log("Element left the viewport");
+		// Hide larger navbar & show smaller navbar
+		$w(largeNavbarID).hide();
+		$w(navbarID).show();
     });
 	
 });
