@@ -16,6 +16,7 @@ $w.onReady(function () {
     {
         if(character=='#') {
             upcomingTextArray.push(arrayEntry);
+            arrayEntry = " ";
         } else {
             arrayEntry += character;
         }
