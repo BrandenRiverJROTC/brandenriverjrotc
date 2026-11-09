@@ -4,10 +4,13 @@
 $w.onReady(function () {
     // Write your JavaScript here
     let completed = "#completed";
-    let incoming = "#incoming";
+
+    let upcoming = "#upcoming";
+    let upcomingText = $w(upcoming).text;
+
     let date = new Date();
 
-    console.log(date);
+    console.log(upcomingText);
 
     // To select an element by ID use: $w('#elementID')
     // Click 'Preview' to run your code
