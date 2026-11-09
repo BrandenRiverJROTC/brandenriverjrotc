@@ -7,10 +7,20 @@ $w.onReady(function () {
 
     let upcoming = "#upcoming";
     let upcomingText = $w(upcoming).text;
+    let upcomingTextArray = [];
 
-    let date = new Date();
+    // Foreach character in...
+    let arrayEntry;
+    for (c=0; c<upcomingText.length; c++)
+    {
+        if(c=='#') {
+            upcomingTextArray.push(arrayEntry);
+        } else {
+            arrayEntry += c;
+        }
+    }
 
-    console.log(upcomingText);
+    console.log(upcomingTextArray);
 
     // To select an element by ID use: $w('#elementID')
     // Click 'Preview' to run your code
