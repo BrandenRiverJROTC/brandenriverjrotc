@@ -7,6 +7,8 @@ $w.onReady(function () {
     let incoming = "#incoming";
     let date = new Date();
 
+    console.log(date);
+
     // To select an element by ID use: $w('#elementID')
     // Click 'Preview' to run your code
 });
