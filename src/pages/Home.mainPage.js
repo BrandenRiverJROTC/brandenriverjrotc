@@ -12,7 +12,7 @@ $w.onReady(function () {
     // Foreach character in...
     let arrayEntry;
     let character = '';
-    for (c=0; c<upcomingText.length; c++)
+    for (let c=0; c<upcomingText.length; c++)
     {
         console.log(character);
 
