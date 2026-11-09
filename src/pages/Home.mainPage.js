@@ -5,8 +5,8 @@ $w.onReady(function () {
     // Write your JavaScript here
     let completed = "#completed";
     let incoming = "#incoming";
+    let date = new Date();
 
     // To select an element by ID use: $w('#elementID')
-    console.log("hkahsdkfasjfk");
     // Click 'Preview' to run your code
 });
