@@ -11,10 +11,11 @@ $w.onReady(function () {
 
     // Foreach character in...
     let arrayEntry;
-    let character = '';
+    let character = " ";
     for (let c=0; c<upcomingText.length; c++)
     {
-        console.log(character);
+        character = upcomingText[c]
+        console.log(character)
 
         if(character=='#') {
             upcomingTextArray.push(arrayEntry);
