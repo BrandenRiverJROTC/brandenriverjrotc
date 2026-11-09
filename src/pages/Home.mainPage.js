@@ -14,7 +14,7 @@ $w.onReady(function () {
     monthNames.set("feburary", 8)
 
     let dateObject = new Date();
-    let currentDate = new dateObject.getMonth();
+    let currentDate = dateObject.getMonth() + " " + dateObject.getDay();
     console.log(currentDate);
 
     let upcoming = "#upcoming";
