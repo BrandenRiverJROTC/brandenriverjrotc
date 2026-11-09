@@ -14,14 +14,14 @@ $w.onReady(function () {
     let character = " ";
     for (let c=0; c<upcomingText.length; c++)
     {
-        character = upcomingText[c]
-        console.log(character)
-
         if(character=='#') {
             upcomingTextArray.push(arrayEntry);
         } else {
             arrayEntry += character;
         }
+
+        character = upcomingText[c]
+        console.log(character)
     }
 
     console.log(upcomingTextArray);
