@@ -11,7 +11,7 @@ $w.onReady(function () {
 
     // Foreach character in...
     let arrayEntry;
-    let character = " ";
+    let character = ":)";
     for (let c=0; c<upcomingText.length; c++)
     {
         if(character=='#') {
