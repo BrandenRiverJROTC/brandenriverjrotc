@@ -13,6 +13,8 @@ $w.onReady(function () {
     let arrayEntry;
     for (c=0; c<upcomingText.length; c++)
     {
+        console.log(c);
+        
         if(c=='#') {
             upcomingTextArray.push(arrayEntry);
         } else {
